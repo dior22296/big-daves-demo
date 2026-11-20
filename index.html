@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Halal Cheesesteaks Orlando SODO | Big Dave's Cheesesteaks</title>
+<meta name="description" content="Craving authentic Philly cheesesteaks in Orlando SODO? Big Dave's serves 100% Halal cheesesteaks & Philly Pretzels near Kia Center. Open late!"/>
+<meta name="theme-color" content="#0A0806"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230A0806'/%3E%3Ctext x='32' y='44' font-family='Arial Black' font-size='30' font-weight='900' fill='%23FFB81C' text-anchor='middle'%3EBD%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Big Dave's Cheesesteaks - Orlando SODO",
+  "image": "assets/hero-cheesesteak.jpg",
+  "url": "https://bigdavesway.com/",
+  "telephone": "(407) 270-4220",
+  "priceRange": "$$",
+  "servesCuisine": ["Philly Cheesesteak", "Halal", "American"],
+  "acceptsReservations": "False",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "45 W Crystal Lake St, Suite 180",
+    "addressLocality": "Orlando",
+    "addressRegion": "FL",
+    "postalCode": "32806",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 28.515494, "longitude": -81.378502 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "4271" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "09:00", "closes": "24:00" }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0A0806; --bg2:#100D09; --card:#171310; --card2:#1E1913;
+  --ink:#FFF6E6; --mut:#C9B99A; --dim:#8f8168;
+  --line:#2C2620; --line2:#3A3226;
+  --gold:#FFB81C; --gold2:#FFD34D; --gold-deep:#B97E06;
+  --red:#C1272D; --red2:#E0454C;
+  --shadow:0 24px 60px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--gold);color:#14100A}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* film grain over the whole experience */
+body::after{content:"";position:fixed;inset:-50%;z-index:200;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  animation:grain 9s steps(6) infinite}
+@keyframes grain{0%,100%{transform:translate(0,0)}20%{transform:translate(-4%,3%)}40%{transform:translate(3%,-4%)}60%{transform:translate(-3%,-2%)}80%{transform:translate(4%,3%)}}
+
+/* ---------- TOPBAR ---------- */
+.topbar{position:relative;z-index:55;display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:12px 20px;background:rgba(10,8,6,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark{width:48px;height:48px;flex:none;display:grid;place-items:center;background:#0A0806;border:3px solid var(--gold);
+  transform:rotate(-3deg);font-family:'Anton',sans-serif;font-size:1.3rem;color:var(--gold);line-height:.9;box-shadow:4px 4px 0 var(--red)}
+.brand .bt{line-height:.95}
+.brand .bt strong{font-family:'Anton',sans-serif;font-weight:400;font-size:1.42rem;letter-spacing:.02em;display:block}
+.brand .bt span{font-family:'Archivo Narrow',sans-serif;letter-spacing:.24em;font-size:.66rem;font-weight:700;text-transform:uppercase;color:var(--red2)}
+.top-actions{display:flex;gap:10px;align-items:center}
+.callbtn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:800;font-size:.95rem;
+  border:1.5px solid var(--line2);padding:10px 16px;border-radius:999px;background:#14100B}
+.callbtn svg{width:17px;height:17px;color:var(--gold)}
+.callbtn:hover{border-color:var(--gold)}
+.bookbtn{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#14100A;text-decoration:none;
+  font-family:'Archivo Narrow',sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.86rem;
+  padding:12px 18px;border:2px solid #14100A;box-shadow:4px 4px 0 var(--red);transition:.18s}
+.bookbtn:hover{transform:translate(-1px,-1px);box-shadow:6px 6px 0 var(--red)}
+@media(max-width:560px){.callbtn .callnum{display:none}.callbtn{padding:10px 12px}}
+
+/* ---------- ICON NAV ---------- */
+nav.icons{position:sticky;top:0;z-index:54;display:flex;justify-content:space-around;background:rgba(10,8,6,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:8px 6px}
+nav.icons a{color:var(--mut);text-decoration:none;font-family:'Archivo Narrow',sans-serif;font-size:11px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:4px 8px;transition:color .2s}
+nav.icons a svg{width:23px;height:23px;display:block;margin:0 auto 4px;color:var(--gold);transition:transform .25s}
+nav.icons a:hover{color:#fff}
+nav.icons a:hover svg{transform:translateY(-2px) scale(1.08)}
+nav.icons a.on{color:var(--gold2)}
+nav.icons a.on svg{color:var(--red2)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;background:#060403}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:112%;object-fit:cover;object-position:center 30%;will-change:transform;
+  animation:kenburns 26s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1.02) translateY(0)}to{transform:scale(1.14) translateY(-2.5%)}}
+.hero-shade{position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(6,4,3,.93) 0%,rgba(6,4,3,.78) 42%,rgba(6,4,3,.25) 72%,rgba(6,4,3,.45) 100%),
+  linear-gradient(0deg,#0A0806 0%,transparent 26%),
+  linear-gradient(180deg,rgba(6,4,3,.55) 0%,transparent 30%)}
+.hero-glow{position:absolute;inset:0;background:radial-gradient(60% 50% at 78% 42%,rgba(255,184,28,.16),transparent 65%);mix-blend-mode:screen}
+.hero-in{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:64px 20px 74px}
+.herorev{max-width:560px;background:rgba(14,11,7,.72);border:1px solid rgba(255,184,28,.35);border-left:4px solid var(--gold);
+  padding:16px 20px 14px;backdrop-filter:blur(8px);margin-bottom:30px;box-shadow:var(--shadow)}
+.herorev .stars{color:var(--gold);letter-spacing:.22em;font-size:.86rem}
+.herorev .hr-text{font-size:1.02rem;line-height:1.5;color:#F5EAD2;margin:6px 0 8px;font-style:italic}
+.herorev .hr-name{font-family:'Archivo Narrow',sans-serif;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;font-weight:700;color:var(--gold)}
+.kick{display:inline-block;font-family:'Archivo Narrow',sans-serif;font-weight:700;letter-spacing:.26em;text-transform:uppercase;
+  font-size:.78rem;color:#14100A;background:var(--gold);padding:.45rem .8rem;transform:rotate(-1.2deg);box-shadow:4px 4px 0 var(--red)}
+.hero h1{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(3.4rem,8.5vw,7rem);line-height:.9;
+  text-transform:uppercase;letter-spacing:.005em;margin:22px 0 0;text-shadow:0 10px 44px rgba(0,0,0,.6)}
+.hero h1 .gd{color:var(--gold)}
+.hero h1 .ol{color:transparent;-webkit-text-stroke:2.5px #FFF6E6}
+.hero h1 .rd{color:var(--red2)}
+.tag{max-width:600px;font-size:1.14rem;color:#EDE0C6;margin-top:20px}
+.tag strong{color:#fff}
+.ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-family:'Archivo Narrow',sans-serif;
+  font-weight:700;letter-spacing:.07em;text-transform:uppercase;font-size:.95rem;padding:15px 24px;cursor:pointer;transition:.18s;border:2px solid transparent}
+.btn svg{width:18px;height:18px}
+.btn-gold{background:var(--gold);color:#14100A;border-color:#14100A;box-shadow:5px 5px 0 var(--red)}
+.btn-gold:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--red)}
+.btn-line{background:rgba(10,8,6,.55);color:#fff;border-color:rgba(255,246,230,.5);backdrop-filter:blur(6px)}
+.btn-line:hover{border-color:var(--gold);color:var(--gold2)}
+.btn-red{background:var(--red);color:#fff;border-color:#5E1216;box-shadow:5px 5px 0 #14100A}
+.btn-red:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 #14100A}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:48px;max-width:920px;
+  border:1px solid rgba(255,246,230,.16);background:rgba(10,8,6,.55);backdrop-filter:blur(8px)}
+.stat{padding:16px 18px;border-right:1px solid rgba(255,246,230,.12)}
+.stat:last-child{border-right:none}
+.stat b{font-family:'Anton',sans-serif;font-weight:400;font-size:1.35rem;display:block;letter-spacing:.02em}
+.stat b .gd{color:var(--gold)} .stat b .rd{color:var(--red2)}
+.stat span{font-size:.8rem;color:var(--mut);font-family:'Archivo Narrow',sans-serif;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+@media(max-width:860px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:none}.stat{border-bottom:1px solid rgba(255,246,230,.12)}.hero-in{padding:44px 16px 54px}}
+
+/* ---------- MARQUEE ---------- */
+.marquee{background:var(--gold);color:#14100A;border-top:3px solid #14100A;border-bottom:3px solid #14100A;
+  overflow:hidden;white-space:nowrap;padding:.6rem 0;font-family:'Anton',sans-serif;letter-spacing:.08em;text-transform:uppercase;font-size:1.02rem}
+.mq-track{display:inline-block;animation:mq 26s linear infinite;will-change:transform}
+.mq-track span{margin:0 .9rem}
+.mq-track .r{color:var(--red)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- SECTIONS ---------- */
+section{max-width:1180px;margin:0 auto;padding:84px 20px 8px}
+.eyebrow{font-family:'Archivo Narrow',sans-serif;letter-spacing:.26em;text-transform:uppercase;font-weight:700;font-size:.76rem;color:var(--red2);margin-bottom:10px}
+h2{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:.96;text-transform:uppercase;letter-spacing:.01em}
+h2 .gd{color:var(--gold)} h2 .rd{color:var(--red2)}
+.divider{width:74px;height:5px;background:var(--gold);margin:16px 0 6px;box-shadow:3px 3px 0 var(--red)}
+.sub{max-width:640px;color:var(--mut);margin-top:10px;font-size:1.02rem}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}.rv.d2{transition-delay:.16s}.rv.d3{transition-delay:.24s}
+
+/* pillars / standards */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.pillar{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);padding:26px 22px;position:relative;overflow:hidden;transition:transform .3s,border-color .3s}
+.pillar::before{content:"";position:absolute;inset:auto -20% -55% -20%;height:70%;background:radial-gradient(50% 100% at 50% 100%,rgba(255,184,28,.14),transparent 70%);opacity:0;transition:opacity .3s}
+.pillar:hover{transform:translateY(-6px);border-color:var(--gold-deep)}
+.pillar:hover::before{opacity:1}
+.pillar .pic{width:52px;height:52px;border:2px solid var(--gold);display:grid;place-items:center;margin-bottom:16px;background:#0D0A06;box-shadow:3px 3px 0 var(--red)}
+.pillar .pic svg{width:26px;height:26px;color:var(--gold)}
+.pillar h3{font-family:'Anton',sans-serif;font-weight:400;font-size:1.28rem;text-transform:uppercase;line-height:1.05;margin-bottom:8px}
+.pillar p{color:var(--mut);font-size:.94rem}
+@media(max-width:980px){.grid4{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid4{grid-template-columns:1fr}}
+
+/* favorites cards */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.fav{background:var(--card);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,border-color .3s,box-shadow .3s}
+.fav:hover{transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:var(--shadow)}
+.fav .ph{height:230px;overflow:hidden;position:relative}
+.fav .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.fav:hover .ph img{transform:scale(1.09)}
+.fav .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,8,6,.55),transparent 45%)}
+.fav .tagchip{position:absolute;z-index:2;top:12px;left:12px;background:var(--red);color:#fff;font-family:'Archivo Narrow',sans-serif;
+  font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.68rem;padding:.35rem .6rem}
+.fav .fb{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.fav h3{font-family:'Anton',sans-serif;font-weight:400;font-size:1.5rem;text-transform:uppercase;line-height:1}
+.fav .fb p{color:var(--mut);font-size:.95rem;flex:1}
+.fav .pr{display:flex;justify-content:space-between;align-items:baseline;border-top:1px dashed var(--line2);padding-top:12px}
+.fav .pr .p{font-family:'Anton',sans-serif;font-size:1.4rem;color:var(--gold)}
+.fav .pr .s{font-size:.82rem;color:var(--dim);font-weight:600}
+@media(max-width:980px){.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.grid3{grid-template-columns:1fr}}
+
+/* menu */
+.menuwrap{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:84px}
+.menuwrap section{padding-top:64px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 8px}
+.tab{border:2px solid var(--line2);background:transparent;color:var(--ink);padding:.65rem 1.1rem;font-family:'Archivo Narrow',sans-serif;
+  font-weight:700;letter-spacing:.07em;text-transform:uppercase;font-size:.86rem;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;gap:8px}
+.tab svg{width:16px;height:16px;color:var(--gold)}
+.tab:hover{border-color:var(--gold)}
+.tab.active{background:var(--gold);color:#14100A;border-color:var(--gold)}
+.tab.active svg{color:var(--red)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;animation:fadein .45s ease}
+@keyframes fadein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.mi{display:flex;justify-content:space-between;gap:16px;padding:17px 0;border-bottom:1px solid var(--line)}
+.mi h4{font-size:1.03rem;font-weight:700}
+.mi h4 .new{display:inline-block;vertical-align:2px;margin-left:8px;background:var(--red);color:#fff;font-family:'Archivo Narrow',sans-serif;
+  font-size:.62rem;font-weight:700;letter-spacing:.1em;padding:.18rem .45rem;text-transform:uppercase}
+.mi p{color:var(--mut);font-size:.9rem;margin-top:3px;max-width:480px}
+.mi .p{font-family:'Anton',sans-serif;font-size:1.12rem;color:var(--gold);white-space:nowrap;padding-top:2px}
+.note{font-size:.88rem;color:var(--dim);margin-top:18px}
+@media(max-width:760px){.menu-grid{grid-template-columns:1fr}}
+
+/* split / story */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:36px}
+.split .frame{position:relative}
+.split .frame img{width:100%;height:480px;object-fit:cover;border:3px solid #14100A;box-shadow:14px 14px 0 var(--gold),14px 14px 0 3px #14100A}
+.split .frame .stamp{position:absolute;right:-14px;bottom:26px;background:var(--red);color:#fff;font-family:'Anton',sans-serif;
+  text-transform:uppercase;letter-spacing:.05em;padding:.7rem 1rem;transform:rotate(-3deg);box-shadow:5px 5px 0 rgba(0,0,0,.4);font-size:1.05rem}
+.checklist{list-style:none;margin-top:20px;display:grid;gap:11px}
+.checklist li{display:flex;gap:11px;align-items:flex-start;font-weight:600;font-size:.99rem}
+.checklist li::before{content:"✓";width:25px;height:25px;flex:0 0 25px;background:var(--gold);color:#14100A;display:grid;place-items:center;font-weight:900;border:2px solid #14100A;font-size:.85rem}
+.split p{color:var(--mut);margin-top:14px}
+.split p strong{color:var(--ink)}
+@media(max-width:860px){.split{grid-template-columns:1fr}.split .frame img{height:340px}}
+
+/* catering */
+.catband{margin-top:84px;background:linear-gradient(120deg,#171006,#0D0A06 55%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.catband::before{content:"";position:absolute;inset:0;background:radial-gradient(45% 90% at 88% 50%,rgba(193,39,45,.16),transparent 70%)}
+.catgrid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;max-width:1180px;margin:0 auto;padding:70px 20px}
+.catgrid .ph{position:relative}
+.catgrid .ph img{width:100%;height:430px;object-fit:cover;box-shadow:var(--shadow);border:1px solid var(--line2)}
+.catgrid .ph .stamp{position:absolute;left:-12px;top:22px;background:var(--gold);color:#14100A;font-family:'Anton',sans-serif;
+  text-transform:uppercase;padding:.6rem .95rem;transform:rotate(-3deg);box-shadow:5px 5px 0 var(--red);font-size:1rem}
+.catlist{display:grid;gap:0;margin-top:22px}
+.catrow{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line2)}
+.catrow b{font-weight:700}
+.catrow span{display:block;color:var(--mut);font-size:.87rem;font-weight:400}
+.catrow .p{font-family:'Anton',sans-serif;color:var(--gold);font-size:1.15rem;white-space:nowrap}
+@media(max-width:860px){.catgrid{grid-template-columns:1fr}.catgrid .ph img{height:300px}}
+
+/* pretzel strip */
+.pretzel{display:grid;grid-template-columns:.95fr 1.05fr;gap:44px;align-items:center;margin-top:36px}
+.pretzel .ph img{width:100%;height:400px;object-fit:cover;border:3px solid #14100A;box-shadow:-14px 14px 0 var(--red)}
+@media(max-width:860px){.pretzel{grid-template-columns:1fr}.pretzel .ph img{height:300px}}
+
+/* reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.rev{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);padding:26px;position:relative;transition:transform .3s,border-color .3s}
+.rev:hover{transform:translateY(-5px);border-color:var(--gold-deep)}
+.rev::before{content:"“";position:absolute;top:2px;right:18px;font-family:'Anton',sans-serif;font-size:4.4rem;color:rgba(255,184,28,.16);line-height:1}
+.rev .stars{color:var(--gold);letter-spacing:.2em;margin-bottom:12px}
+.rev p{color:#EFE3CB;font-size:.99rem}
+.rev footer{margin-top:16px;font-family:'Archivo Narrow',sans-serif;letter-spacing:.1em;text-transform:uppercase;font-size:.74rem;color:var(--gold);font-weight:700}
+@media(max-width:860px){.rev-grid{grid-template-columns:1fr}}
+
+/* visit */
+.visitgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.vcard{background:var(--card);border:1px solid var(--line);padding:28px}
+.vcard h3{font-family:'Anton',sans-serif;font-weight:400;font-size:1.3rem;text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.vcard h3 svg{width:22px;height:22px;color:var(--gold)}
+.hrow{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.hrow .t{font-weight:700;color:var(--gold2)}
+.hrow.open-now .t{color:#3DD68C}
+.addr{font-size:1.05rem;line-height:1.6}
+.addr-note{color:var(--mut);font-size:.92rem;margin-top:10px}
+.mini{display:inline-block;margin-top:16px;margin-right:8px;background:var(--gold);color:#14100A;text-decoration:none;font-family:'Archivo Narrow',sans-serif;
+  font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.82rem;padding:11px 16px;border:2px solid #14100A;box-shadow:3px 3px 0 var(--red);transition:.18s}
+.mini:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--red)}
+.mini.ghost{background:transparent;color:var(--ink);border-color:var(--line2);box-shadow:none}
+.mini.ghost:hover{border-color:var(--gold);color:var(--gold2)}
+@media(max-width:760px){.visitgrid{grid-template-columns:1fr}}
+
+/* CTA band */
+.cta-band{margin-top:84px;background:var(--red);color:#fff;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 120% at 85% 50%,rgba(255,184,28,.35),transparent 65%)}
+.cta-in{position:relative;max-width:1180px;margin:0 auto;padding:52px 20px;display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
+.cta-in h2{color:#fff}
+.cta-in p{color:#FFD9DB;max-width:540px;margin-top:8px}
+.cta-in .btn-gold{box-shadow:5px 5px 0 #14100A}
+
+/* footer */
+footer.site{background:#060403;border-top:1px solid var(--line);margin-top:0;padding:52px 20px 120px;text-align:center}
+footer.site .mark{margin:0 auto 16px}
+footer.site strong{font-family:'Anton',sans-serif;font-weight:400;font-size:1.3rem;letter-spacing:.03em;display:block}
+.faddr{color:var(--mut);margin-top:10px;font-size:.95rem}
+.faddr a{color:var(--gold);text-decoration:none;font-weight:700}
+.fnav{margin:20px 0 6px;font-size:.9rem}
+.fnav a{color:var(--mut);text-decoration:none;margin:0 4px;display:inline-block;padding:10px 8px;font-family:'Archivo Narrow',sans-serif;letter-spacing:.08em;text-transform:uppercase;font-weight:700;font-size:.8rem}
+.fnav a:hover{color:var(--gold2)}
+.fsmall{color:var(--dim);font-size:.8rem;margin-top:14px;line-height:1.7}
+.fsmall .credit{color:var(--gold);font-weight:700;letter-spacing:.05em}
+
+/* ---------- CHATBOT ---------- */
+.chatfab{position:fixed;right:18px;bottom:18px;z-index:120;display:flex;align-items:center;gap:9px;background:#171310;color:#fff;
+  border:1.5px solid var(--gold-deep);border-radius:999px;padding:13px 19px;font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;
+  cursor:pointer;box-shadow:0 14px 34px rgba(0,0,0,.55);transition:.2s}
+.chatfab:hover{border-color:var(--gold);transform:translateY(-2px)}
+.chatfab svg{width:22px;height:22px;flex:none;color:var(--gold)}
+.chatfab .dot{width:9px;height:9px;border-radius:50%;background:#3ddc74;flex:none;box-shadow:0 0 0 3px rgba(61,220,116,.22);animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(61,220,116,.22)}50%{box-shadow:0 0 0 6px rgba(61,220,116,.08)}}
+@media(max-width:480px){.chatfab .fabtxt{display:none}.chatfab{padding:14px;border-radius:50%}}
+.chatpanel{position:fixed;right:18px;bottom:88px;z-index:121;width:372px;max-width:calc(100vw - 24px);height:540px;max-height:calc(100dvh - 110px);
+  background:#0D0A06;border:1px solid var(--line2);border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.65);display:none;flex-direction:column;overflow:hidden}
+.chatpanel.open{display:flex}
+@media(max-width:480px){.chatpanel{right:12px;bottom:82px}}
+.chathead{background:#14100B;border-bottom:2px solid var(--gold);color:#fff;padding:13px 15px;display:flex;align-items:center;gap:11px;flex:none}
+.chatava{width:38px;height:38px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;flex:none;
+  font-family:'Anton',sans-serif;font-size:.82rem;color:#fff;border:2px solid var(--gold)}
+.chathead .ct{font-size:14.5px;font-weight:bold;line-height:1.25}
+.chathead .cs{font-size:11.5px;opacity:.85;display:flex;align-items:center;gap:5px;color:var(--mut)}
+.chathead .cs i{width:7px;height:7px;border-radius:50%;background:#3ddc74;display:inline-block}
+.chatx{margin-left:auto;background:none;border:none;color:#fff;font-size:21px;line-height:1;cursor:pointer;padding:4px 6px;opacity:.9}
+.chatmsgs{flex:1;overflow-y:auto;padding:14px 12px;background:#0A0806;display:flex;flex-direction:column;gap:9px}
+.msg{max-width:86%;padding:10px 13px;border-radius:14px;font-size:13.8px;line-height:1.55}
+.msg p{margin-bottom:7px}.msg p:last-child{margin-bottom:0}
+.msg ul{margin:2px 0 8px 16px}.msg li{margin-bottom:4px}
+.msg.bot{background:#1A1510;border:1px solid #2A2318;color:#F1E7D0;align-self:flex-start;border-bottom-left-radius:4px}
+.msg.user{background:var(--red);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.msg.typing span{display:inline-block;width:7px;height:7px;margin-right:3px;border-radius:50%;background:#9a8a68;animation:tblink 1s infinite}
+.msg.typing span:nth-child(2){animation-delay:.18s}.msg.typing span:nth-child(3){animation-delay:.36s}
+@keyframes tblink{0%,100%{opacity:.25}50%{opacity:1}}
+.callink{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#14100A!important;text-decoration:none;
+  font-weight:bold;font-size:13.5px;padding:10px 16px;border-radius:999px;margin-top:4px}
+.callink svg{width:15px;height:15px}
+.callink.ghost{background:transparent;border:1.5px solid var(--gold);color:#fff!important;margin-left:6px}
+.chatchips{flex:none;display:flex;flex-wrap:wrap;gap:7px;padding:10px 12px 4px;background:#0A0806}
+.chip{border:1.5px solid #3A3226;background:#161209;color:#eee;border-radius:999px;padding:10px 14px;min-height:44px;
+  font-size:12.8px;font-weight:bold;cursor:pointer;font-family:inherit;transition:.2s}
+.chip:hover{border-color:var(--gold)}
+.chip.hot{background:var(--red);border-color:var(--red);color:#fff}
+.chatin{flex:none;display:flex;gap:8px;padding:10px 12px 12px;background:#0A0806}
+.chatin input{flex:1;border:1.5px solid #3A3226;background:#14100B;color:#fff;border-radius:999px;padding:11px 15px;font-size:14px;font-family:inherit;outline:none}
+.chatin input:focus{border-color:var(--gold)}
+.chatin button{flex:none;width:42px;height:42px;border-radius:50%;border:none;background:var(--gold);color:#14100A;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.chatin button svg{width:19px;height:19px}
+
+@media(max-width:560px){section{padding:60px 16px 4px}.menuwrap section{padding-top:48px}}
+@media(prefers-reduced-motion:reduce){
+  .hero-bg img{animation:none}.mq-track{animation:none}body::after{animation:none}
+  .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}
+  .fav .ph img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top" aria-label="Big Dave's Cheesesteaks Orlando — home">
+    <span class="mark">BD</span>
+    <span class="bt"><strong>BIG DAVE'S</strong><span>Cheesesteaks · Orlando SODO</span></span>
+  </a>
+  <div class="top-actions">
+    <a class="callbtn" href="tel:+14072704220" aria-label="Call Big Dave's Cheesesteaks at (407) 270-4220">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
+      <span class="callnum">(407) 270-4220</span>
+    </a>
+    <a class="bookbtn" href="#catering">Catering</a>
+  </div>
+</header>
+
+<nav class="icons" aria-label="Site sections">
+  <a href="#menu" data-sec="menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Menu</a>
+  <a href="#favorites" data-sec="favorites"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21 7 14.2 2 9.3l6.9-1L12 2z"/></svg>Favorites</a>
+  <a href="#catering" data-sec="catering"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11a7 7 0 0 1 14 0M12 4v2M2 21h20M4 17h16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/></svg>Catering</a>
+  <a href="#pretzel" data-sec="pretzel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="9" r="1.6"/><circle cx="9" cy="14.5" r="1.6"/><circle cx="15" cy="14.5" r="1.6"/></svg>Pretzel</a>
+  <a href="#reviews" data-sec="reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.3c-1.5 0-3-.4-4.2-1.1L3 20l1.4-5.1A8.3 8.3 0 0 1 3 11.5 8.4 8.4 0 0 1 11.5 3h1A8.4 8.4 0 0 1 21 11.5z"/></svg>Reviews</a>
+  <a href="#visit" data-sec="visit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Visit</a>
+</nav>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="hero-bg"><img id="heroImg" src="assets/hero-cheesesteak.jpg" alt="Philly cheesesteak with chopped steak, molten cheese, peppers and onions on an Amoroso roll"/></div>
+  <div class="hero-shade"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-in">
+    <div class="herorev">
+      <div class="stars" aria-label="5 star review">★★★★★</div>
+      <p class="hr-text">&ldquo;Legit cheesesteaks the way they are in Philly, including the Amoroso rolls. Finally found an authentic cheesesteak in Orlando for the first time since Brianto's closed like nine years ago!&rdquo;</p>
+      <p class="hr-name">Jason A. — DoorDash Review</p>
+    </div>
+    <span class="kick">100% Halal · Orlando SODO</span>
+    <h1>Philly flavor.<br><span class="gd">Turned all</span><br><span class="ol">the way</span> <span class="rd">up.</span></h1>
+    <p class="tag">Real Philly cheesesteaks in the heart of SODO — steak chopped on a screaming-hot grill, cheese melted all the way through, and fresh <strong>Amoroso rolls</strong>. Plus the salmon egg roll everybody talks about, water ice, and a <strong>Philly Pretzel Factory</strong> right inside.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="tel:+14072704220"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> Call to Order</a>
+      <a class="btn btn-line" href="#menu">See the Menu</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>4.7 <span class="gd">★</span></b><span>Google Rating</span></div>
+      <div class="stat"><b>4,271</b><span>Google Reviews</span></div>
+      <div class="stat"><b>Til <span class="rd">Midnight</span></b><span>Friday &amp; Saturday</span></div>
+      <div class="stat"><b>100% <span class="gd">Halal</span></b><span>Certified Cheesesteaks</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="mq-track" id="mqTrack">
+  <span>Philly Flavor</span><span class="r">•</span><span>100% Halal</span><span class="r">•</span><span>Amoroso Rolls</span><span class="r">•</span><span>Salmon Egg Rolls</span><span class="r">•</span><span>Dave's Way</span><span class="r">•</span><span>Water Ice</span><span class="r">•</span><span>Philly Pretzel Factory</span><span class="r">•</span><span>Open Late Fri–Sat</span><span class="r">•</span>
+</div></div>
+
+<!-- ================= THE STANDARD ================= -->
+<section id="standard">
+  <p class="eyebrow rv">The Big Dave's Standard</p>
+  <h2 class="rv">Built the <span class="gd">Philly way,</span><br>every single time</h2>
+  <div class="divider rv"></div>
+  <p class="sub rv">This isn't a copy of a cheesesteak — it's the real thing, brought to Central Florida. Four things never change, no matter what you order.</p>
+  <div class="grid4">
+    <div class="pillar rv">
+      <div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3 2.5.5 5 2.5 5 6a5 5 0 0 1-10 0c0-1.5.5-3 1.5-4 .5 1 1 2 2 3.5z"/><path d="M12 22c3 0 5.5-2.2 5.5-5.5 0-1.8-.8-3.4-2-4.5.1 1.2-.3 2.3-1 3-.5-1.5-1.5-3-3-4C10 9.5 9.7 8 10 6 7.6 7.8 6 10.2 6 13.5 6 18.8 9 22 12 22z" opacity=".45"/></svg></div>
+      <h3>Chopped on the Grill</h3>
+      <p>Steak shaved thin and chopped on a screaming-hot flat top, cheese folded through while it cooks — never steamed, never shortcut.</p>
+    </div>
+    <div class="pillar rv d1">
+      <div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10c0-2 4-4 9-4s9 2 9 4c0 1.2-1.4 2.2-3.5 2.9C19 13.5 21 15 21 16.5 21 19 17 21 12 21s-9-2-9-4.5C3 15 5 13.5 6.5 12.9 4.4 12.2 3 11.2 3 10z"/><path d="M8 9.5c1 .3 2.5.5 4 .5s3-.2 4-.5" opacity=".6"/></svg></div>
+      <h3>Real Amoroso Rolls</h3>
+      <p>The Philly standard, shipped in — soft inside, proper chew outside. A cheesesteak is only as real as the roll it rides on.</p>
+    </div>
+    <div class="pillar rv d2">
+      <div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="m9 11.5 2 2 4-4.5"/></svg></div>
+      <h3>100% Halal Certified</h3>
+      <p>Every cheesesteak and egg roll on the menu is halal certified — world-class flavor everybody at the table can order.</p>
+    </div>
+    <div class="pillar rv d3">
+      <div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+      <h3>Make It Dave's Way</h3>
+      <p>The full loaded treatment — peppers, onions, mushrooms and Dave's signature sauce. It's how the regulars order, and there's a reason.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAVORITES ================= -->
+<section id="favorites">
+  <p class="eyebrow rv">The Heavy Hitters</p>
+  <h2 class="rv">Orlando's <span class="rd">favorites</span></h2>
+  <div class="divider rv"></div>
+  <p class="sub rv">The orders that built the line out the door in SODO — shot the way they deserve to be seen.</p>
+  <div class="grid3">
+    <article class="fav rv">
+      <div class="ph"><span class="tagchip">Most Ordered</span><img src="assets/hero-cheesesteak.jpg" alt="Classic beef cheesesteak with molten cheese, peppers and onions" loading="lazy"/></div>
+      <div class="fb"><h3>Classic Beef Cheesesteak</h3>
+      <p>Shaved beef piled high with melted cheese and grilled onions on a soft Amoroso roll. The one that started it all.</p>
+      <div class="pr"><span class="p">$18.99</span><span class="s">9″ · 6″ $12.49 · 18″ Big Dave $33.99</span></div></div>
+    </article>
+    <article class="fav rv d1">
+      <div class="ph"><span class="tagchip">The Orlando Original</span><img src="assets/salmon-cheesesteak.jpg" alt="Salmon cheesesteak with peppers, onions and melted cheese" loading="lazy"/></div>
+      <div class="fb"><h3>Salmon Cheesesteak</h3>
+      <p>Seasoned salmon chopped on the grill with peppers, onions &amp; cheese. Nobody else in the city does it like this.</p>
+      <div class="pr"><span class="p">$20.00</span><span class="s">9″ · 6″ $16.00 · Dave's Way to $39</span></div></div>
+    </article>
+    <article class="fav rv d2">
+      <div class="ph"><span class="tagchip">Everybody Talks About It</span><img src="assets/eggrolls.jpg" alt="Crispy salmon egg rolls with Dave's Sauce" loading="lazy"/></div>
+      <div class="fb"><h3>Salmon Egg Roll</h3>
+      <p>Hand-rolled, crispy, stuffed with salmon and cheese, served with signature Dave's Sauce. Get two — one never survives the ride home.</p>
+      <div class="pr"><span class="p">$8.00</span><span class="s">Beef &amp; chicken egg rolls too</span></div></div>
+    </article>
+    <article class="fav rv">
+      <div class="ph"><span class="tagchip">New</span><img src="assets/grill-action.jpg" alt="Steak chopped on a hot flat-top grill with cheese folded through" loading="lazy"/></div>
+      <div class="fb"><h3>Buffalo Fried Chicken Tender Cheesesteak</h3>
+      <p>The newest heavy hitter — crispy buffalo fried chicken tenders chopped with melted cheese. It understood the assignment.</p>
+      <div class="pr"><span class="p">$18.00</span><span class="s">9″ · 6″ $16.00</span></div></div>
+    </article>
+    <article class="fav rv d1">
+      <div class="ph"><span class="tagchip">Baked Fresh Daily</span><img src="assets/pretzels.jpg" alt="Fresh Philadelphia soft pretzels with salt and dipping sauces" loading="lazy"/></div>
+      <div class="fb"><h3>Philly Soft Pretzels</h3>
+      <p>From the Philly Pretzel Factory inside our shop — twists and rivets baked fresh all day, with signature dips.</p>
+      <div class="pr"><span class="p">From $4</span><span class="s">2 pretzels · Dips 2 for $2</span></div></div>
+    </article>
+    <article class="fav rv d2">
+      <div class="ph"><span class="tagchip">Save Room</span><img src="assets/desserts.jpg" alt="Banana pudding and Philadelphia water ice" loading="lazy"/></div>
+      <div class="fb"><h3>Banana Pudding &amp; Water Ice</h3>
+      <p>Mama Hayes' banana pudding that tastes like grandma's recipe, and Philly's frozen classic in rotating daily flavors.</p>
+      <div class="pr"><span class="p">$6.00</span><span class="s">Pudding · Water ice $5.00</span></div></div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<div class="menuwrap">
+<section id="menu">
+  <p class="eyebrow rv">Full Menu</p>
+  <h2 class="rv">Pick your <span class="gd">fighter</span></h2>
+  <div class="divider rv"></div>
+  <p class="sub rv">Every cheesesteak comes chopped on the grill with your choice of cheese and toppings. Make it <strong style="color:var(--gold2)">Dave's Way</strong> for the full loaded treatment.</p>
+  <div class="tabs rv" role="tablist" aria-label="Menu categories">
+    <button class="tab active" data-cat="beef" role="tab" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3 2.5.5 5 2.5 5 6a5 5 0 0 1-10 0c0-1.5.5-3 1.5-4 .5 1 1 2 2 3.5z"/></svg>Beef</button>
+    <button class="tab" data-cat="chicken" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>Chicken</button>
+    <button class="tab" data-cat="salmon" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v7a6 6 0 0 0 12 0V3M6 3h12M12 16v5"/></svg>Salmon &amp; Veggie</button>
+    <button class="tab" data-cat="sides" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3v18M9 3v7a4 4 0 0 1-4 4M9 3a4 4 0 0 1 4 4v3H5M17 3c-1.7 0-3 2.7-3 6 0 2.2 1 4 3 4v8M17 3v10"/></svg>Egg Rolls &amp; Sides</button>
+    <button class="tab" data-cat="meals" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>$12 Meals</button>
+    <button class="tab" data-cat="sweets" role="tab" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M8 6c0 4 1 5 1 8a3 3 0 0 0 6 0c0-3 1-4 1-8M9 21h6M12 17v4"/></svg>Sweets &amp; Drinks</button>
+  </div>
+  <div class="menu-grid" id="menuGrid" role="tabpanel"></div>
+  <p class="note">All cheesesteaks are halal certified. Prices shown for the Orlando SODO location from current public listings (Nov 2026) — ask in-store about today's water ice flavors and limited-time items.</p>
+</section>
+</div>
+
+<!-- ================= STORY ================= -->
+<section id="story">
+  <div class="split">
+    <div class="frame rv">
+      <img src="assets/grill-action.jpg" alt="Cheesesteak chopped on a screaming-hot flat-top grill" loading="lazy"/>
+      <span class="stamp">Straight Outta Philly</span>
+    </div>
+    <div class="rv d1">
+      <p class="eyebrow">Why Big Dave's</p>
+      <h2>Straight outta Philly,<br><span class="gd">right here in SODO</span></h2>
+      <div class="divider"></div>
+      <p>This isn't a copy of a cheesesteak — it's the real thing, brought to Central Florida. Steak shaved thin and chopped on a <strong>screaming-hot grill</strong>, cheese melted all the way through, and rolls with that proper Philly chew.</p>
+      <ul class="checklist">
+        <li>100% halal-certified cheesesteaks &amp; egg rolls</li>
+        <li>Authentic Amoroso rolls — the Philly standard</li>
+        <li>Four ways to get it: beef, chicken, salmon &amp; veggie</li>
+        <li>Water ice and banana pudding that tastes like grandma's recipe</li>
+        <li>Breakfast, lunch, dinner &amp; late-night Fri–Sat til midnight</li>
+        <li>A Philly Pretzel Factory baked fresh inside the shop</li>
+      </ul>
+      <div class="ctas" style="margin-top:26px">
+        <a class="btn btn-gold" href="tel:+14072704220">Call (407) 270-4220</a>
+        <a class="btn btn-line" style="background:transparent;color:var(--ink);border-color:var(--line2)" href="#visit">Plan Your Visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATERING ================= -->
+<div class="catband" id="catering">
+  <div class="catgrid">
+    <div class="rv">
+      <p class="eyebrow">Catering &amp; Group Orders</p>
+      <h2>Feed the <span class="gd">whole crew</span></h2>
+      <div class="divider"></div>
+      <p class="sub" style="margin-top:12px">Office lunches, game days, team events — the Philly Feast platters and box lunches that make you the hero of the group chat. These are the orders that should come straight to the shop.</p>
+      <div class="catlist">
+        <div class="catrow"><div><b>Beef Philly Platter</b><span>12 × 4″ beef cheesesteaks, cheese + up to 4 veggies · Serves 12</span></div><span class="p">$90</span></div>
+        <div class="catrow"><div><b>Chicken Philly Platter</b><span>12 × 4″ chicken cheesesteaks · Serves 12</span></div><span class="p">$90</span></div>
+        <div class="catrow"><div><b>Salmon Philly Platter</b><span>12 × 4″ salmon cheesesteaks · Serves 12</span></div><span class="p">$110</span></div>
+        <div class="catrow"><div><b>Box Lunches</b><span>Beef or chicken $15 · salmon $17 · veggie $10 — with chips &amp; water · Min. 10</span></div><span class="p">From $10</span></div>
+        <div class="catrow"><div><b>Pretzel Party Trays</b><span>Small Rivet $65 (serves 10) · Large Rivet $75 (serves 20) · Mini Dog Tray $150</span></div><span class="p">From $65</span></div>
+      </div>
+      <div class="ctas" style="margin-top:26px">
+        <a class="btn btn-red" href="tel:+14072704220"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> Call for Catering</a>
+      </div>
+    </div>
+    <div class="ph rv d1">
+      <img src="assets/catering-platter.jpg" alt="Catering platter of mini Philly cheesesteaks" loading="lazy"/>
+      <span class="stamp">Serves 12 · From $90</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PRETZEL FACTORY ================= -->
+<section id="pretzel">
+  <div class="pretzel">
+    <div class="ph rv"><img src="assets/pretzels.jpg" alt="Fresh-baked Philadelphia soft pretzels with salt" loading="lazy"/></div>
+    <div class="rv d1">
+      <p class="eyebrow">Inside the Shop</p>
+      <h2>Philly <span class="rd">Pretzel Factory</span></h2>
+      <div class="divider"></div>
+      <p style="color:var(--mut);margin-top:12px">A second Philly classic under the same roof. Fresh-baked soft pretzels made daily — grab a couple for the ride home, or a full party tray for the crew.</p>
+      <div class="catlist">
+        <div class="catrow"><div><b>Fresh Pretzels</b><span>Hand-twisted, coarse salt, baked all day</span></div><span class="p">2 · $4 / 6 · $10 / 12 · $18 / 24 · $30</span></div>
+        <div class="catrow"><div><b>Signature Dips — 2 for $2</b><span>Spicy brown mustard, honey mustard, cinnamon sugar, butter cream, brownie batter &amp; more</span></div><span class="p">$2</span></div>
+        <div class="catrow"><div><b>Party Trays</b><span>Small Rivet $65 · Large Rivet $75 · Mini Dogs $150</span></div><span class="p">From $65</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section id="reviews">
+  <p class="eyebrow rv">Word on the Street</p>
+  <h2 class="rv">What Orlando <span class="gd">is saying</span></h2>
+  <div class="divider rv"></div>
+  <p class="sub rv">4.7 stars across 4,271 Google reviews — and the delivery apps tell the same story.</p>
+  <div class="rev-grid">
+    <div class="rev rv">
+      <div class="stars">★★★★★</div>
+      <p>&ldquo;Absolutely killer value. I've never had a cheesesteak this good for a price this low…&rdquo;</p>
+      <footer>Robert M. · DoorDash Review</footer>
+    </div>
+    <div class="rev rv d1">
+      <div class="stars">★★★★★</div>
+      <p>&ldquo;…this was by far the best cheese steak sandwich I have ever had. no joke. … Five stars all day long. Thnx Big Dave's for an awesome lunch experience.&rdquo;</p>
+      <footer>Charles B. · DoorDash Review</footer>
+    </div>
+    <div class="rev rv d2">
+      <div class="stars">★★★★★</div>
+      <p>&ldquo;Best service and cheesesteaks ever!!&rdquo;</p>
+      <footer>Google Review · Orlando SODO</footer>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISIT ================= -->
+<section id="visit">
+  <p class="eyebrow rv">Visit Us</p>
+  <h2 class="rv">Hours &amp; <span class="rd">location</span></h2>
+  <div class="divider rv"></div>
+  <div class="visitgrid">
+    <div class="vcard rv">
+      <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Hours of Operation</h3>
+      <div class="hrow" id="hrow-weekday"><span>Sunday – Thursday</span><span class="t">9:00 AM – 11:00 PM</span></div>
+      <div class="hrow" id="hrow-fri"><span>Friday</span><span class="t">9:00 AM – 12:00 AM</span></div>
+      <div class="hrow" id="hrow-sat"><span>Saturday</span><span class="t">9:00 AM – 12:00 AM</span></div>
+      <p class="addr-note" id="openNote">Kitchen serves the full menu all day. Late-night in SODO: we're the last real meal standing on Fri &amp; Sat.</p>
+    </div>
+    <div class="vcard rv d1">
+      <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Find Us in SODO</h3>
+      <p class="addr"><strong>Big Dave's Cheesesteaks</strong><br>45 W Crystal Lake Street, Suite 180<br>Orlando, FL 32806</p>
+      <p class="addr-note">In the SODO district, just south of Downtown Orlando and minutes from the Kia Center — easy parking, quick in-and-out for pickup, and dine-in seating when you want it hot off the grill.</p>
+      <a class="mini" href="https://www.google.com/maps/search/?api=1&query=Big+Daves+Cheesesteaks+45+W+Crystal+Lake+St+Suite+180+Orlando+FL+32806" target="_blank" rel="noopener">Get Directions</a>
+      <a class="mini ghost" href="tel:+14072704220">Call the Shop</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<div class="cta-band">
+  <div class="cta-in">
+    <div>
+      <h2>Hungry? Skip the line.</h2>
+      <p>Call ahead and your cheesesteak will be hot, loaded, and waiting when you pull up. Catering line is the same number — platters from $90.</p>
+    </div>
+    <a class="btn btn-gold" href="tel:+14072704220"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> Call (407) 270-4220</a>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site">
+  <span class="mark">BD</span>
+  <strong>BIG DAVE'S CHEESESTEAKS — ORLANDO</strong>
+  <p class="faddr">45 W Crystal Lake St, Suite 180, Orlando, FL 32806 · <a href="tel:+14072704220">(407) 270-4220</a><br>
+  Sun–Thu 9 AM–11 PM · Fri–Sat 9 AM–Midnight · Also in Oviedo &amp; the Kia Center</p>
+  <div class="fnav">
+    <a href="#menu">Menu</a><a href="#favorites">Favorites</a><a href="#catering">Catering</a><a href="#pretzel">Pretzel</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+  </div>
+  <p class="fsmall">&copy; 2026 Big Dave's Cheesesteaks — Orlando SODO concept<br>
+  <span class="credit">Built by Pinnacle Tech, Orlando FL</span><br>
+  Demo concept for the Orlando SODO location. Menu &amp; prices from public listings, Nov 2026 — confirm at the shop or bigdavesway.com.</p>
+</footer>
+
+<!-- ================= AI CHATBOT ================= -->
+<button class="chatfab" id="chatFab" aria-label="Chat with the Big Dave's assistant" aria-controls="chatPanel" aria-expanded="false">
+  <span class="dot" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.3c-1.5 0-3-.4-4.2-1.1L3 20l1.4-5.1A8.3 8.3 0 0 1 3 11.5 8.4 8.4 0 0 1 11.5 3h1A8.4 8.4 0 0 1 21 11.5z"/></svg>
+  <span class="fabtxt">Chat with us</span>
+</button>
+<div class="chatpanel" id="chatPanel" role="dialog" aria-modal="true" aria-label="Chat with the Big Dave's assistant">
+  <div class="chathead">
+    <div class="chatava">BD</div>
+    <div>
+      <div class="ct">Big Dave's — Orlando SODO</div>
+      <div class="cs"><i></i> Assistant · replies instantly</div>
+    </div>
+    <button class="chatx" id="chatClose" aria-label="Close chat">&times;</button>
+  </div>
+  <div class="chatmsgs" id="chatMsgs" aria-live="polite"></div>
+  <div class="chatchips" id="chatChips">
+    <button class="chip hot" data-q="What's popular?">What's popular?</button>
+    <button class="chip" data-q="How much is a classic beef cheesesteak?">Cheesesteak prices</button>
+    <button class="chip" data-q="What are your hours?">Hours</button>
+    <button class="chip" data-q="Tell me about catering">Catering</button>
+    <button class="chip" data-q="Is everything halal?">Halal?</button>
+    <button class="chip" data-q="Where are you located?">Location</button>
+  </div>
+  <form class="chatin" id="chatForm">
+    <input id="chatInput" type="text" placeholder="Ask about the menu, prices, catering…" autocomplete="off" aria-label="Type your message">
+    <button type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg></button>
+  </form>
+</div>
+
+<script>
+/* ============ MENU DATA (verified public listings, Nov 2026) ============ */
+var MENU = {
+  beef: [
+    ["Regular Beef Cheesesteak 6″", "Chopped beef, melted cheese, grilled onions on an Amoroso roll.", "$12.49"],
+    ["Classic Beef Cheesesteak 9″", "The signature — more steak, more cheese, proper Philly size.", "$18.99"],
+    ["Big Dave Beef Cheesesteak 18″", "The giant. A foot and a half of beef cheesesteak, built to share (or not).", "$33.99"],
+    ["Beef Dave's Way", "Loaded with peppers, onions, mushrooms & Dave's signature sauce. 6″ / 9″ / 18″.", "$14.99 / $20.00 / $37.00"],
+    ["Truffle Shuffle Cheesesteak", "Fall limited-time build — ask the shop what's on it today.", "From $12"],
+    ["Beef Philly Fries", "Crispy fries loaded with chopped beef and cheese sauce.", "$10.00"]
+  ],
+  chicken: [
+    ["Regular Chicken Cheesesteak 6″", "Grilled chopped chicken with melted cheese and onions.", "$12.49"],
+    ["Classic Chicken Cheesesteak 9″", "The full-size chicken classic on an Amoroso roll.", "$18.99"],
+    ["Big Dave Chicken Cheesesteak 18″", "The 18-inch chicken heavyweight.", "$33.99"],
+    ["Chicken Dave's Way", "Peppers, onions, mushrooms & signature sauce. 6″ / 9″ / 18″.", "$14.99 / $20.00 / $37.00"],
+    ["Buffalo Fried Chicken Tender Cheesesteak", "Crispy buffalo tenders chopped with melted cheese. 6″ / 9″.", "$16.00 / $18.00", 1],
+    ["Chicken Philly Fries", "Fries loaded with chopped chicken and cheese sauce.", "$10.00"]
+  ],
+  salmon: [
+    ["Regular Salmon Cheesesteak 6″", "Seasoned salmon chopped on the grill with peppers, onions & cheese.", "$16.00"],
+    ["Classic Salmon Cheesesteak 9″", "The Orlando original, full size.", "$20.00"],
+    ["Big Dave Salmon Cheesesteak 18″", "A foot and a half of salmon cheesesteak.", "$37.00"],
+    ["Salmon Dave's Way", "The loaded salmon build. 6″ / 9″ / 18″.", "$18.00 / $22.00 / $39.00"],
+    ["Regular Veggie Cheesesteak", "Grilled veggies and melted cheese — full flavor, no meat.", "$8.00"],
+    ["Classic Veggie Cheesesteak", "The 9-inch veggie build.", "$12.00"],
+    ["Big Dave Veggie Cheesesteak 18″", "The veggie giant.", "$16.00"]
+  ],
+  sides: [
+    ["Salmon Egg Roll", "Hand-rolled, crispy, salmon & cheese with signature Dave's Sauce.", "$8.00"],
+    ["Beef Egg Roll", "The beef version of the famous roll.", "$8.00"],
+    ["Chicken Egg Roll", "Crispy chicken & cheese, Dave's Sauce on the side.", "$8.00"],
+    ["Fries", "Golden, crispy, seasoned right.", "$5.00"],
+    ["Fries with Whiz", "Philly-style, loaded with cheese whiz.", "$6.00"],
+    ["Chicken Tenders", "Crispy tenders — 3 pc or 5 pc.", "$10.00 / $12.00"],
+    ["Extra Sauces", "Dave's Sauce, honey mustard, buffalo, ranch & more.", "$0.99"]
+  ],
+  meals: [
+    ["Beef Value Box", "Beef cheesesteak, fries and more — the $12 box that eats like $20.", "$12.00"],
+    ["Chicken Value Box", "Chicken cheesesteak combo box.", "$12.00"],
+    ["Veggie Meal Box", "The veggie build, boxed up as a full meal.", "$12.00"],
+    ["Philly Fries + Egg Roll Combo", "Loaded Philly fries with an egg roll on the side.", "$12.00"],
+    ["3pc Tender + Egg Roll Combo", "Crispy tenders and a famous egg roll.", "$12.00"],
+    ["Mini Meal for Two", "Two mini cheesesteaks with fries and egg rolls — built for two.", "$24.00"]
+  ],
+  sweets: [
+    ["Mama Hayes' Banana Pudding", "Layered, creamy, tastes like grandma's recipe.", "$6.00"],
+    ["Water Ice", "Philly's frozen classic — flavors rotate daily, ask what's pouring.", "$5.00"],
+    ["Tractor Drinks 16oz", "Southern sweet tea, mango, fruit punch, strawberry dragonfruit.", "$5.00"],
+    ["Fountain Drinks", "The full fountain lineup.", "$5.00"],
+    ["Coffee", "Fresh-brewed, morning through night.", "From $3.00"],
+    ["Aquafina Water", "Ice-cold bottled water.", "$3.00"]
+  ]
+};
+var grid = document.getElementById('menuGrid');
+function renderMenu(cat) {
+  grid.style.animation = 'none'; void grid.offsetWidth; grid.style.animation = '';
+  grid.innerHTML = MENU[cat].map(function (m) {
+    return '<div class="mi"><div><h4>' + m[0] + (m[3] ? '<span class="new">New</span>' : '') + '</h4><p>' + m[1] + '</p></div><div class="p">' + m[2] + '</div></div>';
+  }).join('');
+}
+document.querySelectorAll('.tab').forEach(function (b) {
+  b.addEventListener('click', function () {
+    document.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('active'); x.setAttribute('aria-selected', 'false'); });
+    b.classList.add('active'); b.setAttribute('aria-selected', 'true');
+    renderMenu(b.dataset.cat);
+  });
+});
+renderMenu('beef');
+
+/* ============ MARQUEE (duplicate for seamless loop) ============ */
+var mq = document.getElementById('mqTrack');
+mq.innerHTML += mq.innerHTML;
+
+/* ============ REVEAL ON SCROLL ============ */
+var io = new IntersectionObserver(function (es) {
+  es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: .12 });
+document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+
+/* ============ NAV ACTIVE STATE ============ */
+var secObs = new IntersectionObserver(function (es) {
+  es.forEach(function (e) {
+    if (e.isIntersecting) {
+      document.querySelectorAll('nav.icons a').forEach(function (a) {
+        a.classList.toggle('on', a.dataset.sec === e.target.id);
+      });
+    }
+  });
+}, { rootMargin: '-38% 0px -55% 0px' });
+['menu', 'favorites', 'catering', 'pretzel', 'reviews', 'visit'].forEach(function (id) {
+  var s = document.getElementById(id); if (s) secObs.observe(s);
+});
+
+/* ============ HERO PARALLAX (light, rAF-throttled) ============ */
+var heroImg = document.getElementById('heroImg'), ticking = false;
+window.addEventListener('scroll', function () {
+  if (ticking) return; ticking = true;
+  requestAnimationFrame(function () {
+    var y = window.scrollY;
+    if (y < 900) heroImg.style.translate = '0 ' + (y * 0.12) + 'px';
+    ticking = false;
+  });
+}, { passive: true });
+
+/* ============ OPEN-NOW STATUS (Orlando time, verified hours) ============ */
+(function () {
+  try {
+    var now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+    var day = now.getDay(), mins = now.getHours() * 60 + now.getMinutes();
+    var lateNight = (day === 5 || day === 6);
+    var closes = lateNight ? 1440 : 1380;
+    var open = mins >= 540 && mins < closes;
+    var note = document.getElementById('openNote');
+    var rowId = day === 0 || day >= 5 ? null : 'hrow-weekday';
+    if (day === 5) rowId = 'hrow-fri'; if (day === 6) rowId = 'hrow-sat'; if (day === 0) rowId = 'hrow-weekday';
+    var row = document.getElementById(rowId);
+    if (row) row.classList.add('open-now');
+    if (note) note.innerHTML = open
+      ? '<strong style="color:#3DD68C">● Open now</strong> — kitchen is firing until ' + (lateNight ? 'midnight' : '11 PM') + ' tonight. Call ahead and skip the wait.'
+      : 'We open at 9:00 AM daily — call ahead for pickup, catering, and group orders.';
+  } catch (e) {}
+})();
+</script>
+
+<script>
+/* Big Dave's Cheesesteaks — on-page assistant (client-side only, fact-locked). */
+(function () {
+  var TEL = 'tel:+14072704220';
+  var PHONE = '(407) 270-4220';
+  var MAPS = 'https://www.google.com/maps/search/?api=1&query=Big+Daves+Cheesesteaks+45+W+Crystal+Lake+St+Suite+180+Orlando+FL+32806';
+  var callBtn = '<a class="callink" href="' + TEL + '"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg> Call ' + PHONE + '</a>';
+  var menuBtn = '<a class="callink ghost" href="#menu">See the Menu</a>';
+  var cta = '<p>' + callBtn + menuBtn + '</p>';
+
+  var ANSWERS = {
+    popular: '<p>The orders everybody comes back for:</p><ul><li><strong>Classic Beef Cheesesteak 9″ — $18.99</strong> (the most ordered item in the shop)</li><li><strong>Salmon Egg Roll — $8</strong>, with signature Dave\'s Sauce</li><li><strong>Salmon Cheesesteak 9″ — $20</strong>, the Orlando original</li><li><strong>Mama Hayes\' Banana Pudding — $6</strong></li></ul><p>First time? Classic Beef, Dave\'s Way. Thank us later.</p>' + cta,
+    menu: '<p>Here\'s the lineup — everything chopped on the grill, all of it <strong>100% halal</strong>:</p><ul><li><strong>Beef</strong> — 6″ $12.49 · 9″ $18.99 · 18″ Big Dave $33.99</li><li><strong>Chicken</strong> — same sizes, same prices</li><li><strong>Salmon</strong> — 6″ $16 · 9″ $20 · 18″ $37</li><li><strong>Veggie</strong> — from $8</li><li><strong>Egg rolls</strong> — salmon, beef or chicken, $8</li><li><strong>$12 value boxes</strong> and a Mini Meal for Two at $24</li></ul><p>Full menu with every item is on this page — tap a category up top.</p>' + cta,
+    beef: '<p>Beef cheesesteak prices:</p><ul><li><strong>Regular 6″ — $12.49</strong></li><li><strong>Classic 9″ — $18.99</strong></li><li><strong>Big Dave 18″ — $33.99</strong></li><li><strong>Dave\'s Way</strong> (loaded: peppers, onions, mushrooms, signature sauce) — $14.99 / $20 / $37</li></ul><p>All on fresh Amoroso rolls, cheese melted all the way through.</p>' + cta,
+    chicken: '<p>Chicken cheesesteak prices:</p><ul><li><strong>Regular 6″ — $12.49</strong></li><li><strong>Classic 9″ — $18.99</strong></li><li><strong>Big Dave 18″ — $33.99</strong></li><li><strong>Dave\'s Way</strong> — $14.99 / $20 / $37</li><li><strong>NEW Buffalo Fried Chicken Tender Cheesesteak</strong> — 6″ $16 / 9″ $18</li></ul>' + cta,
+    salmon: '<p>The salmon lineup — our signature:</p><ul><li><strong>Regular 6″ — $16</strong></li><li><strong>Classic 9″ — $20</strong></li><li><strong>Big Dave 18″ — $37</strong></li><li><strong>Salmon Dave\'s Way</strong> — $18 / $22 / $39</li><li><strong>Salmon Egg Roll — $8</strong> (the one everybody talks about)</li></ul>' + cta,
+    eggroll: '<p>Egg rolls are <strong>$8 each</strong> — salmon, beef, or chicken — hand-rolled and crispy, served with signature Dave\'s Sauce. Pro move: the 3pc Tender + Egg Roll combo box is $12.</p>' + cta,
+    pretzel: '<p>We\'ve got a <strong>Philly Pretzel Factory inside the shop</strong> — fresh-baked soft pretzels all day:</p><ul><li>2 pretzels $4 · 6 for $10 · 12 for $18 · 24 for $30</li><li>Signature dips — 2 for $2</li><li>Party trays: Small Rivet $65 · Large Rivet $75 · Mini Dog Tray $150</li></ul>' + cta,
+    sweets: '<p>Save room:</p><ul><li><strong>Mama Hayes\' Banana Pudding — $6</strong></li><li><strong>Water Ice — $5</strong> (Philly\'s frozen classic; flavors rotate daily)</li><li>Tractor Drinks 16oz — $5 · Fountain drinks $5 · Coffee from $3</li></ul>' + cta,
+    value: '<p>The <strong>$12 Meals</strong> are the best deal in SODO:</p><ul><li>Beef Value Box — $12</li><li>Chicken Value Box — $12</li><li>Veggie Meal Box — $12</li><li>Philly Fries + Egg Roll combos — $12</li><li>3pc Tender + Egg Roll — $12</li></ul><p>Feeding two? The <strong>Mini Meal for Two is $24</strong> — two mini cheesesteaks, fries and egg rolls.</p>' + cta,
+    davesway: '<p><strong>Dave\'s Way</strong> is the full loaded treatment — peppers, onions, mushrooms and Dave\'s signature sauce on top of your cheesesteak. It\'s how the regulars order. Add it to beef, chicken or salmon in any size.</p>' + cta,
+    catering: '<p>We cater — and the platters travel like champs:</p><ul><li><strong>Philly Feast Platters</strong> (12 × 4″ sandwiches, serves 12): Beef $90 · Chicken $90 · Salmon $110</li><li><strong>Box lunches</strong>: beef/chicken $15 · salmon $17 · veggie $10 (chips + water, min. 10)</li><li><strong>Pretzel trays</strong>: Small Rivet $65 · Large Rivet $75 · Mini Dog Tray $150</li><li><strong>Bulk cheesesteaks</strong> for big crews — min. 25</li></ul><p>Call the shop and we\'ll build your order out:</p>' + cta,
+    hours: '<p>Our hours at the Orlando SODO shop:</p><ul><li><strong>Sunday – Thursday:</strong> 9:00 AM – 11:00 PM</li><li><strong>Friday – Saturday:</strong> 9:00 AM – 12:00 AM (midnight)</li></ul><p>Late-night near the Kia Center and Downtown — we\'re the last real meal standing on weekends.</p>' + cta,
+    location: '<p>You\'ll find us at <strong>45 W Crystal Lake St, Suite 180, Orlando, FL 32806</strong> — in SODO, just south of Downtown and minutes from the Kia Center. <a href="' + MAPS + '" target="_blank" rel="noopener" style="color:#FFD34D;font-weight:bold">Get directions here</a>.</p><p>Big Dave\'s also has an Oviedo location and a spot in the Kia Center — this page is for the SODO shop.</p>' + cta,
+    halal: '<p>Yes — <strong>100% halal certified</strong>. Every cheesesteak and egg roll on the menu is halal, so the whole table can order without thinking twice.</p>' + cta,
+    order: '<p>Fastest way: <strong>call ahead for pickup</strong> and skip the line — your food will be hot and waiting. We\'re also on DoorDash and Uber Eats for delivery, and Toast for online ordering.</p>' + cta,
+    reviews: '<p>Orlando has spoken: <strong>4.7 stars across 4,271 Google reviews</strong>. One regular put it best: <em>"Legit cheesesteaks the way they are in Philly, including the Amoroso rolls."</em> — Jason A.</p><p>Come see what the fuss is about:</p>' + cta,
+    veggie: '<p>We\'ve got you — the <strong>veggie cheesesteak</strong> comes in three sizes: Regular $8 · Classic $12 · Big Dave 18″ $16, plus a $12 Veggie Meal Box. Grilled veggies, melted cheese, same Philly treatment.</p>' + cta,
+    call: '<p>You got it — the shop is happy to take your order, catering questions, anything:</p>' + cta,
+    greeting: '<p>Hey! Welcome to <strong>Big Dave\'s Cheesesteaks — Orlando SODO</strong>. I can hit you with prices, hours, catering, or what\'s popular. Hungry for something specific?</p>',
+    thanks: '<p>Anytime — that\'s what we\'re here for. When you\'re ready, call ahead and we\'ll have it hot off the grill. Philly flavor, Orlando style.</p>' + cta,
+    fallback: '<p>Good question — that one\'s best answered by the shop directly so you get the exact right info. Give them a call, or ask me about the menu, prices, hours, or catering:</p>' + cta
+  };
+
+  function has(t, words) { for (var i = 0; i < words.length; i++) { if (t.indexOf(words[i]) > -1) return true; } return false; }
+
+  function answer(raw) {
+    var t = ' ' + raw.toLowerCase().replace(/[^a-z0-9 ]/g, ' ') + ' ';
+    if (has(t, [' cater ', ' catering ', ' party ', ' office lunch ', ' group order ', ' platter ', ' feed ', ' wedding ', ' event '])) return ANSWERS.catering;
+    if (has(t, [' halal ', ' muslim ', ' certified '])) return ANSWERS.halal;
+    if (has(t, [' egg roll ', ' eggroll ', ' egg rolls ', ' eggrolls '])) return ANSWERS.eggroll;
+    if (has(t, [' pretzel ', ' pretzels ', ' rivet ', ' mini dog '])) return ANSWERS.pretzel;
+    if (has(t, [' dave s way ', ' daves way ', ' loaded ', ' the way '])) return ANSWERS.davesway;
+    if (has(t, [' salmon '])) return ANSWERS.salmon;
+    if (has(t, [' value box ', ' 12 ', ' deal ', ' deals ', ' cheap ', ' combo ', ' meal box ', ' meal for two ', ' for two '])) return ANSWERS.value;
+    if (has(t, [' buffalo ', ' tender cheesesteak '])) return ANSWERS.chicken;
+    if (has(t, [' chicken '])) return ANSWERS.chicken;
+    if (has(t, [' veggie ', ' vegetarian ', ' vegan ', ' no meat ', ' meatless '])) return ANSWERS.veggie;
+    if (has(t, [' beef ', ' steak ', ' cheesesteak ', ' cheesesteaks ', ' philly ', ' sandwich ', ' price ', ' prices ', ' cost ', ' how much ', ' menu '])) {
+      if (has(t, [' menu ', ' what do you have ', ' what do you sell ', ' options '])) return ANSWERS.menu;
+      return ANSWERS.beef;
+    }
+    if (has(t, [' pudding ', ' water ice ', ' dessert ', ' sweet ', ' sweets ', ' drink ', ' drinks ', ' coffee ', ' tea '])) return ANSWERS.sweets;
+    if (has(t, [' popular ', ' best ', ' recommend ', ' recommendation ', ' famous ', ' good ', ' favorite ', ' favourites '])) return ANSWERS.popular;
+    if (has(t, [' hour ', ' hours ', ' open ', ' close ', ' when ', ' late ', ' midnight ', ' schedule '])) return ANSWERS.hours;
+    if (has(t, [' where ', ' location ', ' located ', ' address ', ' directions ', ' near ', ' sodo ', ' downtown ', ' kia ', ' parking ', ' drive '])) return ANSWERS.location;
+    if (has(t, [' order ', ' delivery ', ' deliver ', ' doordash ', ' uber ', ' pickup ', ' pick up ', ' online '])) return ANSWERS.order;
+    if (has(t, [' review ', ' reviews ', ' rating ', ' ratings ', ' stars ', ' good place '])) return ANSWERS.reviews;
+    if (has(t, [' call ', ' phone ', ' number ', ' talk ', ' speak ', ' contact ', ' human '])) return ANSWERS.call;
+    if (has(t, [' thank ', ' thanks ', ' great ', ' awesome ', ' cool '])) return ANSWERS.thanks;
+    if (has(t, [' hello ', ' hi ', ' hey ', ' yo '])) return ANSWERS.greeting;
+    return ANSWERS.fallback;
+  }
+
+  var fab = document.getElementById('chatFab');
+  var panel = document.getElementById('chatPanel');
+  var msgs = document.getElementById('chatMsgs');
+  var form = document.getElementById('chatForm');
+  var input = document.getElementById('chatInput');
+  var greeted = false;
+
+  function scrollDown() { msgs.scrollTop = msgs.scrollHeight; }
+  function addMsg(cls, html) {
+    var d = document.createElement('div');
+    d.className = 'msg ' + cls;
+    d.innerHTML = html;
+    msgs.appendChild(d);
+    scrollDown();
+    return d;
+  }
+  function botReply(html) {
+    var t = addMsg('bot typing', '<span></span><span></span><span></span>');
+    setTimeout(function () {
+      t.classList.remove('typing');
+      t.innerHTML = html;
+      scrollDown();
+    }, 550);
+  }
+  function send(text) {
+    var clean = (text || '').trim();
+    if (!clean) return;
+    addMsg('user', clean.replace(/</g, '&lt;'));
+    botReply(answer(clean));
+  }
+  function openChat() {
+    panel.classList.add('open');
+    fab.setAttribute('aria-expanded', 'true');
+    if (!greeted) {
+      greeted = true;
+      botReply('<p>Hey — welcome to <strong>Big Dave\'s Cheesesteaks, Orlando SODO</strong>! I\'m the shop\'s assistant. Ask me about menu prices, hours, catering, or what\'s popular — or tap a topic below.</p>');
+    }
+    setTimeout(function () { input.focus(); }, 80);
+  }
+  function closeChat(skipFocus) {
+    if (!panel.classList.contains('open')) return;
+    panel.classList.remove('open');
+    fab.setAttribute('aria-expanded', 'false');
+    if (!skipFocus) fab.focus();
+  }
+  panel.addEventListener('keydown', function (e) {
+    if (e.key !== 'Tab') return;
+    var f = panel.querySelectorAll('button, input, a[href]');
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  fab.addEventListener('click', function () { panel.classList.contains('open') ? closeChat() : openChat(); });
+  document.getElementById('chatClose').addEventListener('click', function () { closeChat(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeChat(false); });
+  form.addEventListener('submit', function (e) { e.preventDefault(); send(input.value); input.value = ''; });
+  var chips = document.querySelectorAll('#chatChips .chip');
+  for (var i = 0; i < chips.length; i++) {
+    chips[i].addEventListener('click', function () { send(this.getAttribute('data-q')); });
+  }
+  msgs.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href="#menu"]') : null;
+    if (a) closeChat(true);
+  });
+})();
+</script>
+</body>
+</html>
